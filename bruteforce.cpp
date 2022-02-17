@@ -1,6 +1,7 @@
 int bestW = 0;
 vector<int> answer;
 vector<int> used;
+
 void recursive(int N, int W, const vector<int>& w, int curW, int index) {
   if (index == N) {
     if (bestW < curW && curW <= W) {
@@ -14,6 +15,7 @@ void recursive(int N, int W, const vector<int>& w, int curW, int index) {
     used.pop_back();
   }
 }
+
 void solve(int N, int W, const vector<int>& w) {
   bestW = 0;
   answer.clear();
