@@ -22,8 +22,7 @@ void solve(int N, int W, const vector<int>& w) {
     for (int el : w) {
         cout << el << ' ';
     }
-    cout << "]\nBest sum = " << bestW;
-    cout << "\nIndexes for this sum (from 1 to N):\n";
+    cout << "]\nBest sum = " << bestW << "\nIndexes for this sum (from 1 to N):\n";
     for (int el : answer) {
         cout << el + 1 << ' ';
     }
